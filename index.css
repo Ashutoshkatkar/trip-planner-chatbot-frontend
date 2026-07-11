@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(177, 92, 255, 0.35);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0714;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2450;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3270;
+}
+
+/* --- Print / "Download PDF" support ---------------------------------- */
+/* When window.print() is triggered from the Result Panel, everything
+   except #result-panel-print is hidden and the panel is rendered on a
+   plain white page for readability. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #result-panel-print,
+  #result-panel-print * {
+    visibility: visible;
+  }
+  #result-panel-print {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+  #result-panel-print * {
+    color: #111111 !important;
+    background: transparent !important;
+    border-color: #dddddd !important;
+    box-shadow: none !important;
+  }
+}
