@@ -11,7 +11,7 @@ import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import { gradientButton, tokens } from './theme.js';
 
 const SUGGESTIONS = [
-  { label: 'Japan Trip', query: 'Plan a complete 7 days Japan trip from Bangladesh including  hotels and sightseeing under 2 lakhs.' },
+  { label: 'Japan Trip', query: 'Plan a complete 7 days Japan trip from India including  hotels and sightseeing under 2 lakhs.' },
   { label: 'Dubai Trip', query: 'Plan a 5 day Dubai trip from India including  hotels and top attractions under 1.5 lakhs.' },
   { label: 'Thailand Trip', query: 'Plan a 6 day Thailand trip from India covering Bangkok and Phuket, with and hotels, under 1 lakh.' }
 ];
@@ -70,7 +70,7 @@ export default function TripForm({ query, setQuery, onGenerate, loading, online 
       </Stack>
 
       <Typography sx={{ color: tokens.textLo, mb: 2.5, fontSize: 14 }}>
-        Example: Plan a complete 7 days Japan trip from Bangladesh under 2 lakhs.
+        Example: Plan a complete 7 days Japan trip from India under 2 lakhs.
       </Typography>
 
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} alignItems="stretch">
